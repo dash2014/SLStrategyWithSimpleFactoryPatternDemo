@@ -6,8 +6,8 @@
 //  Copyright (c) 2014年 com.dash.Qjie. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "Strategy.h"
 
-@interface TwentyPercentDiscountStrategy : NSObject
+@interface TwentyPercentDiscountStrategy : Strategy
 
 @end

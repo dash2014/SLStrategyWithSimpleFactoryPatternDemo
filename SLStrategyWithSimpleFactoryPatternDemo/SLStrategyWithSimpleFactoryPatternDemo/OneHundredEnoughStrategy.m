@@ -8,6 +8,13 @@
 
 #import "OneHundredEnoughStrategy.h"
 
+static NSInteger const kDefaultDiscount = 15;
+
 @implementation OneHundredEnoughStrategy
+
+- (CGFloat)finalPriceWithOriginPrice:(CGFloat)originPrice
+{
+    return originPrice - kDefaultDiscount;
+}
 
 @end

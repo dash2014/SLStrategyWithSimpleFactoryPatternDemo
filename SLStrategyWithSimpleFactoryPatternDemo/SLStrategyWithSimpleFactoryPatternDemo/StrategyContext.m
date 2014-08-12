@@ -8,6 +8,20 @@
 
 #import "StrategyContext.h"
 
+#import "Strategy.h"
+
+@interface StrategyContext ()
+
+@end
+
 @implementation StrategyContext
+
++ (CGFloat)finalPriceByStrategyString:(NSString *)strategyString
+                          originPrice:(CGFloat)originPrice
+{
+    Strategy *strategy;
+    strategy = [Strategy strategyWithIdentifier:strategyString];
+    return [strategy finalPriceWithOriginPrice:originPrice];
+}
 
 @end

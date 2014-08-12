@@ -10,4 +10,9 @@
 
 @implementation integrationStrategy
 
+- (CGFloat)finalPriceWithOriginPrice:(CGFloat)originPrice
+{
+    return originPrice;
+}
+
 @end

@@ -10,4 +10,9 @@
 
 @implementation TwentyPercentDiscountStrategy
 
+- (CGFloat)finalPriceWithOriginPrice:(CGFloat)originPrice
+{
+    return originPrice * 0.8;
+}
+
 @end

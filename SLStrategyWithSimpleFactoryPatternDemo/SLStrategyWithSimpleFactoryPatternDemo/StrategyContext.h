@@ -10,4 +10,7 @@
 
 @interface StrategyContext : NSObject
 
++ (CGFloat)finalPriceByStrategyString:(NSString *)strategyString
+                          originPrice:(CGFloat)originPrice;
+
 @end

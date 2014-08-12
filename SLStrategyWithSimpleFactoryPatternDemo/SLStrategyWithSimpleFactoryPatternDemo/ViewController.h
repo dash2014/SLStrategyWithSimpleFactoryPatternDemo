@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+extern NSString * const kDefaultTwentyPercentDiscountIdentifier;
+extern NSString * const kDefaultOneHundredEnoughIdentifier;
+extern NSString * const kDefaultIntegrationIdentifier;
+
 @interface ViewController : UIViewController
 
 @end

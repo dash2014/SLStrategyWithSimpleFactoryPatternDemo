@@ -6,8 +6,8 @@
 //  Copyright (c) 2014年 com.dash.Qjie. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "Strategy.h"
 
-@interface OneHundredEnoughStrategy : NSObject
+@interface OneHundredEnoughStrategy : Strategy
 
 @end

@@ -21,6 +21,11 @@
 		C8083B5C1998AA4B00294795 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8083B3E1998AA4A00294795 /* UIKit.framework */; };
 		C8083B641998AA4B00294795 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C8083B621998AA4B00294795 /* InfoPlist.strings */; };
 		C8083B661998AA4B00294795 /* SLStrategyWithSimpleFactoryPatternDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C8083B651998AA4B00294795 /* SLStrategyWithSimpleFactoryPatternDemoTests.m */; };
+		C8083B9C1999E7EB00294795 /* StrategyContext.m in Sources */ = {isa = PBXBuildFile; fileRef = C8083B9B1999E7EB00294795 /* StrategyContext.m */; };
+		C8083B9F1999E80400294795 /* Strategy.m in Sources */ = {isa = PBXBuildFile; fileRef = C8083B9E1999E80400294795 /* Strategy.m */; };
+		C8083BA21999E84D00294795 /* TwentyPercentDiscountStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = C8083BA11999E84D00294795 /* TwentyPercentDiscountStrategy.m */; };
+		C8083BA51999E86500294795 /* OneHundredEnoughStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = C8083BA41999E86500294795 /* OneHundredEnoughStrategy.m */; };
+		C8083BA81999E88500294795 /* integrationStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = C8083BA71999E88500294795 /* integrationStrategy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +58,16 @@
 		C8083B611998AA4B00294795 /* SLStrategyWithSimpleFactoryPatternDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SLStrategyWithSimpleFactoryPatternDemoTests-Info.plist"; sourceTree = "<group>"; };
 		C8083B631998AA4B00294795 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C8083B651998AA4B00294795 /* SLStrategyWithSimpleFactoryPatternDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SLStrategyWithSimpleFactoryPatternDemoTests.m; sourceTree = "<group>"; };
+		C8083B9A1999E7EB00294795 /* StrategyContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StrategyContext.h; sourceTree = "<group>"; };
+		C8083B9B1999E7EB00294795 /* StrategyContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StrategyContext.m; sourceTree = "<group>"; };
+		C8083B9D1999E80400294795 /* Strategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Strategy.h; sourceTree = "<group>"; };
+		C8083B9E1999E80400294795 /* Strategy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Strategy.m; sourceTree = "<group>"; };
+		C8083BA01999E84D00294795 /* TwentyPercentDiscountStrategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwentyPercentDiscountStrategy.h; sourceTree = "<group>"; };
+		C8083BA11999E84D00294795 /* TwentyPercentDiscountStrategy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwentyPercentDiscountStrategy.m; sourceTree = "<group>"; };
+		C8083BA31999E86500294795 /* OneHundredEnoughStrategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OneHundredEnoughStrategy.h; sourceTree = "<group>"; };
+		C8083BA41999E86500294795 /* OneHundredEnoughStrategy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OneHundredEnoughStrategy.m; sourceTree = "<group>"; };
+		C8083BA61999E88500294795 /* integrationStrategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = integrationStrategy.h; sourceTree = "<group>"; };
+		C8083BA71999E88500294795 /* integrationStrategy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = integrationStrategy.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +134,16 @@
 				C8083B501998AA4A00294795 /* ViewController.m */,
 				C8083B521998AA4A00294795 /* Images.xcassets */,
 				C8083B411998AA4A00294795 /* Supporting Files */,
+				C8083B9A1999E7EB00294795 /* StrategyContext.h */,
+				C8083B9B1999E7EB00294795 /* StrategyContext.m */,
+				C8083B9D1999E80400294795 /* Strategy.h */,
+				C8083B9E1999E80400294795 /* Strategy.m */,
+				C8083BA01999E84D00294795 /* TwentyPercentDiscountStrategy.h */,
+				C8083BA11999E84D00294795 /* TwentyPercentDiscountStrategy.m */,
+				C8083BA31999E86500294795 /* OneHundredEnoughStrategy.h */,
+				C8083BA41999E86500294795 /* OneHundredEnoughStrategy.m */,
+				C8083BA61999E88500294795 /* integrationStrategy.h */,
+				C8083BA71999E88500294795 /* integrationStrategy.m */,
 			);
 			path = SLStrategyWithSimpleFactoryPatternDemo;
 			sourceTree = "<group>";
@@ -249,9 +274,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8083B9C1999E7EB00294795 /* StrategyContext.m in Sources */,
 				C8083B511998AA4A00294795 /* ViewController.m in Sources */,
+				C8083BA21999E84D00294795 /* TwentyPercentDiscountStrategy.m in Sources */,
+				C8083B9F1999E80400294795 /* Strategy.m in Sources */,
 				C8083B4B1998AA4A00294795 /* AppDelegate.m in Sources */,
 				C8083B471998AA4A00294795 /* main.m in Sources */,
+				C8083BA51999E86500294795 /* OneHundredEnoughStrategy.m in Sources */,
+				C8083BA81999E88500294795 /* integrationStrategy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,6 +486,7 @@
 				C8083B6B1998AA4B00294795 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C8083B6C1998AA4B00294795 /* Build configuration list for PBXNativeTarget "SLStrategyWithSimpleFactoryPatternDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +495,7 @@
 				C8083B6E1998AA4B00294795 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
